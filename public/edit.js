@@ -1,5 +1,5 @@
 /**
- * RcmCallToActionBox
+ * rcm-issuu edit
  *
  * JS for editing RcmCallToActionBox
  *

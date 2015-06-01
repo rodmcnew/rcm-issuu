@@ -1,5 +1,5 @@
 /**
- * Dialog Form for Rcm Issuu
+ * Dialog Form for Rcm Issuu rcm-issuu
  *
  * @param {RcmIssuuApiProcessor} apiProcessor Api Processor
  * @constructor

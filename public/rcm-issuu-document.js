@@ -1,3 +1,7 @@
+/**
+ * rcm-issuu RcmIssuuDocument
+ * @constructor
+ */
 var RcmIssuuDocument = function() {
     var me = this;
 

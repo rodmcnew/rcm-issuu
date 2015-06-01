@@ -1,3 +1,7 @@
+/**
+ * rcm-issuu RcmIssuuApiProcessor
+ * @constructor
+ */
 var RcmIssuuApiProcessor = function () {
     var me = this;
 
