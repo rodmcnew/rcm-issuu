@@ -1,10 +1,13 @@
+/* <rcm-issuu> @todo fix name-spacing */
+
 .docSearchBar {
     display: block;
     margin-top: 7px;
     border-bottom: 1px solid;
 }
 
-.docSearchBar .dialogElement label, .docSearchBar .dialogElement input {
+.docSearchBar .dialogElement label,
+.docSearchBar .dialogElement input {
     float: left;
 }
 
@@ -54,7 +57,8 @@
     width: 175px;
 }
 
-.radioBoxSelected, .docDivContainer:hover {
+.radioBoxSelected,
+.docDivContainer:hover {
     background-color: #dcdcdc;
 }
 
@@ -67,3 +71,5 @@
     width: 100%;
     padding-bottom: 3em;
 }
+
+/* </rcm-issuu> */

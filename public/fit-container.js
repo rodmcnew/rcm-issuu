@@ -1,4 +1,7 @@
-
+/**
+ * rcm-issuu fitContainer
+ * @todo fix name-space
+ */
 var fitContainer = function () {
     $.each($('.fit-container'), function () {
         var problemDiv = $(this);

@@ -26,16 +26,15 @@ return [
             'tooltip' => 'Embed an Issuu document',
             'icon' => '',
             'editJs' => '/modules/rcm-issuu/edit.js',
-            'canCache'=> false
+            'canCache' => false
         ],
     ],
-
     'router' => array(
         'routes' => array(
             'issuuRest' => array(
-                'type'    => 'Segment',
+                'type' => 'Segment',
                 'options' => array(
-                    'route'    => '/issuu/:username/:id',
+                    'route' => '/issuu/:username/:id',
                     'defaults' => array(
                         'controller' => 'RcmIssuu\Controller\DocumentListController',
                     ),
@@ -43,39 +42,43 @@ return [
             ),
         ),
     ),
-
     'view_manager' => [
         'template_path_stack' => [
             __DIR__ . '/../view',
         ],
-
         'strategies' => [
             'ViewJsonStrategy',
         ],
     ],
-
     'asset_manager' => [
         'resolver_configs' => [
             'aliases' => [
                 'modules/rcm-issuu/' => __DIR__ . '/../public/',
             ],
             'collections' => [
-                'modules/rcm-admin/js/rcm-admin.js' => [
+                'modules/rcm/modules.js' => [
+                    'modules/rcm-issuu/fit-container.js',
+                    'modules/rcm-issuu/rcm-issuu.js',
+                ],
+                'modules/rcm-admin/admin.js' => [
                     'modules/rcm-issuu/rcm-issuu-document.js',
                     'modules/rcm-issuu/rcm-issuu-api-processor.js',
                     'modules/rcm-issuu/rcm-issuu-edit-dialog-form.js',
                     'modules/rcm-issuu/edit.js',
                 ],
+                'modules/rcm-admin/admin.css' => [
+                    // @todo add this and fix name-spacing
+                    // @todo remove the dynamic css bit from edit.js
+                    // 'modules/rcm-issuu/edit.css'
+                ],
             ],
         ],
     ],
-
     'service_manager' => [
         'invokables' => [
             'RcmIssuu\Service\IssuuApi' => 'RcmIssuu\Service\IssuuApi',
         ]
     ],
-
     'controllers' => [
         'factories' => [
             'RcmIssuu' => '\RcmIssuu\Factory\PluginControllerFactory',
