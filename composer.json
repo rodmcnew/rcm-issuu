@@ -1,5 +1,5 @@
 {
-  "name": "reliv/rcm-issuu",
+  "name": "rcm/issuu",
   "description": "Provides an integration layer for the Reliv Content Manager and Issuu ",
   "license": "BSD-3-Clause",
   "keywords": [
@@ -39,7 +39,7 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "reliv/rcm": "0.*",
+    "rcm/core": "0.*",
     "guzzle/guzzle": "~3.7"
   },
   "require-dev": {
